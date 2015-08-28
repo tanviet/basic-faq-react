@@ -1,0 +1,332 @@
+/** MAIN **/
+body {
+  color: #333333;
+  background: #f1f1f1;
+  padding-bottom: 60px;
+}
+
+a {
+  color: #1d9977;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+
+  &:hover {
+    color: #16775c;
+    text-decoration: none;
+  }
+}
+
+.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/** APP **/
+.main-app {
+  .container {
+
+    /** LIST QUESTIONS **/
+    .question-list {
+      background: #fff;
+
+      /** QUESTION **/
+      .question {
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+
+        /** USER AVATAR **/
+        .image-user {
+          text-align: center;
+
+          .avatar-user {
+            border-radius: 50%;
+          }
+
+          .display-name {
+            margin-top: 5px;
+            color: #E67E22;
+            display: block;
+            white-space: nowrap;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 12px;
+          }
+        }
+
+        /** QUESTION TITLE **/
+        .qmain {
+          .title {
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .timestamp {
+            .time {
+              font-size: 12px;
+              margin-left: 5px;
+            }
+          }
+        }
+
+        /** ADDITIONAL INFORMATION **/
+        .info {
+          text-align: center;
+
+          .answers-number {
+            font-size: 18px;
+            font-weight: 700;
+          }
+
+          .answers-text {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    /** DETAILED QUESTION **/
+    .question-detail {
+      background-color: #ffffff;
+      box-shadow: 0 -1px 6px rgba(0,0,0,.1);
+      border-left: 3px solid #1d9977;
+      padding: 10px 15px;
+      border-bottom: 1px solid #eee;
+
+      .vote {
+        ul.list-group {
+          li.list-group-item {
+            border: none;
+            font-size: 24px;
+            height: 45px;
+
+            &.up, &.down {
+              cursor: pointer;
+            }
+
+            &.number {
+              font-size: 28px;
+              font-weight: 700;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+
+      .title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #1d9977;
+      }
+
+      .timestamp {
+        .time {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+      }
+
+      .category {
+        .item {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+      }
+
+      .author-info {
+        padding: 10px 15px;
+        background-color: #eeeeee;
+
+        .avatar-user {
+          border-radius: 50%;
+        }
+
+        .display-name {
+          color: #E67E22;
+          display: inline;
+          white-space: nowrap;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+
+      .question-content {
+        line-height: 25px;
+        color: #777;
+      }
+
+      .question-answers-number {
+        color: #1d9977;
+        font-size: 24px;
+        padding-top: 20px;
+        font-weight: 700;
+      }
+    }
+
+    /** LIST ANSWERS **/
+    .answers {
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      background-color: #fff;
+
+      .answer-detail {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+
+        .content {
+          .answer-author {
+            font-size: 12px;
+            color: #777;
+
+            .display-name {
+              color: #E67E22;
+            }
+
+            .icon {
+              margin: 0 5px;
+            }
+          }
+
+          .answer-content {
+            margin-top: 5px;
+            line-height: 25px;
+          }
+        }
+
+        .vote {
+          ul.list-group {
+            li.list-group-item {
+              border: none;
+              font-size: 24px;
+              height: 45px;
+
+              &.up, &.down {
+                cursor: pointer;
+              }
+
+              &.number {
+                font-size: 28px;
+                font-weight: 700;
+                margin-left: 4px;
+              }
+            }
+          }
+        }
+      }
+
+      .notification {
+        margin-top: 7px;
+        font-size: 18px;
+      }
+
+      .post-answer {
+        padding: 15px;
+
+        .answer-text {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    /** STATS **/
+    .stats {
+      margin-bottom: 15px;
+
+      .item {
+        text-align: center;
+        color: #fff;
+        padding: 5px 0;
+
+        &.stat-questions {
+          background-color: #1ABC9C;
+        }
+
+        &.stat-answers {
+          background-color: #2ECC71;
+        }
+
+        &.stat-users {
+          background-color: #F1C40F;
+        }
+
+        &.stat-categories {
+          background-color: #E67E22;
+        }
+
+        .number {
+          font-size: 34px;
+          font-weight: 700;
+
+          i {
+            font-size: 28px;
+            margin-right: 10px;
+            opacity: 0.3;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .text {
+          font-size: 15px;
+        }
+      }
+
+      .widget-title {
+        background-color: #fff;
+        padding: 7px 10px;
+        border-bottom: 1px solid #ddd;
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .widget-content {
+        background-color: #fff;
+        padding: 10px;
+
+        &.widget-category {
+          .item {
+            background-color: #F1F1F1;
+            color: #333;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px 7px;
+
+            &:hover {
+              background-color: #16775c;
+              color: #fff;
+            }
+          }
+        }
+
+        &.widget-popular-questions {
+          .item {
+            text-align: left;
+            border-bottom: 1px dashed #ddd;
+
+            &:last-child {
+              border: none;
+            }
+          }
+
+          .more {
+            color: #333;
+            margin-left: 7px;
+
+            span {
+              margin-left: 3px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}

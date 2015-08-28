@@ -1,0 +1,254 @@
+/** MAIN **/
+body {
+  color: #333333;
+  background: #f1f1f1;
+  padding-bottom: 60px;
+}
+a {
+  color: #1d9977;
+  outline: none;
+  border: 0;
+  text-decoration: none;
+}
+a:hover {
+  color: #16775c;
+  text-decoration: none;
+}
+.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+/** APP **/
+.main-app .container {
+  /** LIST QUESTIONS **/
+  /** DETAILED QUESTION **/
+  /** LIST ANSWERS **/
+  /** STATS **/
+}
+.main-app .container .question-list {
+  background: #fff;
+  /** QUESTION **/
+}
+.main-app .container .question-list .question {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  /** USER AVATAR **/
+  /** QUESTION TITLE **/
+  /** ADDITIONAL INFORMATION **/
+}
+.main-app .container .question-list .question .image-user {
+  text-align: center;
+}
+.main-app .container .question-list .question .image-user .avatar-user {
+  border-radius: 50%;
+}
+.main-app .container .question-list .question .image-user .display-name {
+  margin-top: 5px;
+  color: #E67E22;
+  display: block;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.main-app .container .question-list .question .qmain .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.main-app .container .question-list .question .qmain .timestamp .time {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.main-app .container .question-list .question .info {
+  text-align: center;
+}
+.main-app .container .question-list .question .info .answers-number {
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-app .container .question-list .question .info .answers-text {
+  font-size: 12px;
+}
+.main-app .container .question-detail {
+  background-color: #ffffff;
+  box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+  border-left: 3px solid #1d9977;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+.main-app .container .question-detail .vote ul.list-group li.list-group-item {
+  border: none;
+  font-size: 24px;
+  height: 45px;
+}
+.main-app .container .question-detail .vote ul.list-group li.list-group-item.up,
+.main-app .container .question-detail .vote ul.list-group li.list-group-item.down {
+  cursor: pointer;
+}
+.main-app .container .question-detail .vote ul.list-group li.list-group-item.number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.main-app .container .question-detail .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d9977;
+}
+.main-app .container .question-detail .timestamp .time {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.main-app .container .question-detail .category .item {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.main-app .container .question-detail .author-info {
+  padding: 10px 15px;
+  background-color: #eeeeee;
+}
+.main-app .container .question-detail .author-info .avatar-user {
+  border-radius: 50%;
+}
+.main-app .container .question-detail .author-info .display-name {
+  color: #E67E22;
+  display: inline;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 5px;
+  font-size: 12px;
+}
+.main-app .container .question-detail .question-content {
+  line-height: 25px;
+  color: #777;
+}
+.main-app .container .question-detail .question-answers-number {
+  color: #1d9977;
+  font-size: 24px;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.main-app .container .answers {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.main-app .container .answers .answer-detail {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.main-app .container .answers .answer-detail .content .answer-author {
+  font-size: 12px;
+  color: #777;
+}
+.main-app .container .answers .answer-detail .content .answer-author .display-name {
+  color: #E67E22;
+}
+.main-app .container .answers .answer-detail .content .answer-author .icon {
+  margin: 0 5px;
+}
+.main-app .container .answers .answer-detail .content .answer-content {
+  margin-top: 5px;
+  line-height: 25px;
+}
+.main-app .container .answers .answer-detail .vote ul.list-group li.list-group-item {
+  border: none;
+  font-size: 24px;
+  height: 45px;
+}
+.main-app .container .answers .answer-detail .vote ul.list-group li.list-group-item.up,
+.main-app .container .answers .answer-detail .vote ul.list-group li.list-group-item.down {
+  cursor: pointer;
+}
+.main-app .container .answers .answer-detail .vote ul.list-group li.list-group-item.number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.main-app .container .answers .notification {
+  margin-top: 7px;
+  font-size: 18px;
+}
+.main-app .container .answers .post-answer {
+  padding: 15px;
+}
+.main-app .container .answers .post-answer .answer-text {
+  margin-bottom: 10px;
+}
+.main-app .container .stats {
+  margin-bottom: 15px;
+}
+.main-app .container .stats .item {
+  text-align: center;
+  color: #fff;
+  padding: 5px 0;
+}
+.main-app .container .stats .item.stat-questions {
+  background-color: #1ABC9C;
+}
+.main-app .container .stats .item.stat-answers {
+  background-color: #2ECC71;
+}
+.main-app .container .stats .item.stat-users {
+  background-color: #F1C40F;
+}
+.main-app .container .stats .item.stat-categories {
+  background-color: #E67E22;
+}
+.main-app .container .stats .item .number {
+  font-size: 34px;
+  font-weight: 700;
+}
+.main-app .container .stats .item .number i {
+  font-size: 28px;
+  margin-right: 10px;
+  opacity: 0.3;
+}
+.main-app .container .stats .item .number i:hover {
+  opacity: 1;
+}
+.main-app .container .stats .item .text {
+  font-size: 15px;
+}
+.main-app .container .stats .widget-title {
+  background-color: #fff;
+  padding: 7px 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 700;
+  font-size: 15px;
+}
+.main-app .container .stats .widget-content {
+  background-color: #fff;
+  padding: 10px;
+}
+.main-app .container .stats .widget-content.widget-category .item {
+  background-color: #F1F1F1;
+  color: #333;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 7px;
+}
+.main-app .container .stats .widget-content.widget-category .item:hover {
+  background-color: #16775c;
+  color: #fff;
+}
+.main-app .container .stats .widget-content.widget-popular-questions .item {
+  text-align: left;
+  border-bottom: 1px dashed #ddd;
+}
+.main-app .container .stats .widget-content.widget-popular-questions .item:last-child {
+  border: none;
+}
+.main-app .container .stats .widget-content.widget-popular-questions .more {
+  color: #333;
+  margin-left: 7px;
+}
+.main-app .container .stats .widget-content.widget-popular-questions .more span {
+  margin-left: 3px;
+  font-weight: 700;
+}

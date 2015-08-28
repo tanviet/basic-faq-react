@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block script %}
+<script src="./lib/react-fluxer/dist/react-fluxer.min.js"></script>
+<script src="./lib/react-router/build/umd/ReactRouter.min.js"></script>
+<script src="./lib/react/JSXTransformer.js"></script>
+<script src="./lib/eventEmitter/EventEmitter.min.js"></script>
+<script src="./lib/lodash/lodash.min.js"></script>
+<script src="./lib/moment/min/moment.min.js"></script>
+{% endblock %}
+{% block content %}
+<div id="list-questions"></div>
+
+<script>
+  // Get logged user information
+  window.USER = {};
+  {% if user %}
+    USER._id = "{{ user._id }}"
+    USER.username = "{{ user.username }}";
+    USER.displayName = "{{ user.displayName }}";
+  {% endif %};
+</script>
+
+<script type="text/javascript" src="./js/build.js"></script>
+{% endblock %}
